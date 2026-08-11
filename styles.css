@@ -2067,3 +2067,10 @@ details p {
     justify-content: center;
   }
 }
+
+/* mobile-contrast-final */
+@media (max-width:820px){
+.marquee span,.editorial-card p,.launch-intro,.package-card li,.launch-note,.inquiry p{color:rgba(255,255,255,.94)}
+.about-copy p:not(.eyebrow),.stats span,.service-card li,.template-intro,.template-card p{color:#3d3935}
+.inquiry-form label,.inquiry-form input,.inquiry-form select,.inquiry-form textarea,.email-capture input{color:#272522}
+}
