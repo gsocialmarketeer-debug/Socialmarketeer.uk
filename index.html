@@ -434,12 +434,18 @@
           <p class="eyebrow">Digital Products & Free Resources</p>
           <h2>Build your content system with free downloads and paid digital products.</h2>
         </div>
-        <form class="email-capture reveal" action="mailto:gsocialmarketeer@gmail.com" method="post" enctype="text/plain">
+        <form class="email-capture reveal" action="https://formsubmit.co/gsocialmarketeer@gmail.com" method="post">
+          <input type="hidden" name="_subject" value="New Social Marketeer resource-list signup">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://socialmarketeer-uk.vercel.app/?subscribed=true#resources">
+          <input class="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
           <label for="resource-email">Join the resource list</label>
           <div>
             <input id="resource-email" name="email" type="email" placeholder="Email address" required>
             <button class="button button-dark" type="submit">Send Me Updates</button>
           </div>
+          <p class="form-status" data-form-status="resources" hidden>Thank you. You are now on the resource list.</p>
         </form>
         <div class="resource-grid">
           <article class="resource-card reveal"><span>Free</span><h3>Social Media Checklist for Growth</h3><p>A clean checklist for profile polish, content planning, consistency and social media growth.</p><a href="ultimate-ig-checklist.pdf" download="Social Media Checklist for Growth.pdf">Instant Download</a></article>
@@ -547,8 +553,14 @@
               <span>Cornwall, UK</span>
             </div>
           </div>
-          <form class="inquiry-form reveal" action="mailto:gsocialmarketeer@gmail.com" method="post" enctype="text/plain">
+          <form class="inquiry-form reveal" action="https://formsubmit.co/gsocialmarketeer@gmail.com" method="post">
+            <input type="hidden" name="_subject" value="New Social Marketeer website enquiry">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://socialmarketeer-uk.vercel.app/?submitted=true#inquiry">
+            <input class="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
             <label>Name<input name="name" type="text" required></label>
+            <label>Email<input name="email" type="email" autocomplete="email" required></label>
             <label>Business<input name="business" type="text"></label>
             <label>Instagram handle<input name="instagram" type="text" placeholder="@"></label>
             <label>Service interested in<select name="service"><option>Website Design</option><option>New Business Launch Package</option><option>Google Business Profile</option><option>Local SEO</option><option>Branding & Print Design</option><option>Personalised Marketing Plan</option><option>Social Media Management</option><option>Social Media & Marketing Digital Content Creation</option><option>Social Media Video Creation</option><option>Email Marketing</option><option>Custom Package</option></select></label>
@@ -556,6 +568,7 @@
             <label>Goals<textarea name="goals" rows="4" required></textarea></label>
             <label>Timeline<input name="timeline" type="text" placeholder="When would you like to begin?"></label>
             <button class="button button-light" type="submit">Submit Inquiry</button>
+            <p class="form-status" data-form-status="inquiry" hidden>Thank you. Your inquiry has been sent and I will be in touch soon.</p>
           </form>
         </div>
       </section>

@@ -74,3 +74,19 @@ document.querySelectorAll(".resource-card a[download]").forEach((button) => {
     URL.revokeObjectURL(url);
   });
 });
+
+const formState = new URLSearchParams(window.location.search);
+
+if (formState.get("submitted") === "true") {
+  document.querySelector(".inquiry-form")?.insertAdjacentHTML(
+    "beforebegin",
+    '<p class="form-success" role="status">Thank you. Your inquiry has been sent successfully. I will be in touch soon.</p>'
+  );
+}
+
+if (formState.get("subscribed") === "true") {
+  document.querySelector(".email-capture")?.insertAdjacentHTML(
+    "beforebegin",
+    '<p class="form-success" role="status">Thank you. You have joined the Social Marketeer resource list.</p>'
+  );
+}
