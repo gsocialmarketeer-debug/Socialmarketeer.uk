@@ -1836,6 +1836,12 @@ details p {
 
   .hero-subtitle,
   .hero-highlight,
+  .marquee span,
+  .editorial-card p,
+  .launch-intro,
+  .package-card li,
+  .launch-note,
+  .inquiry p,
   .section-dark p,
   .section-dark .timeline-item p,
   .section-dark .why-grid p,
@@ -1845,15 +1851,28 @@ details p {
 
   .section-heading > p:not(.eyebrow),
   .split-heading p:not(.eyebrow),
+  .about-copy p:not(.eyebrow),
+  .stats span,
   .website-copy > p,
   .website-card p,
   .business-card p,
   .service-card p,
+  .service-card li,
   .resource-card p,
   .shop-intro > p:not(.eyebrow),
+  .template-intro,
+  .template-card p,
   .studio-panel p:not(.eyebrow),
   details p {
     color: #3d3935;
+  }
+
+  .inquiry-form label,
+  .inquiry-form input,
+  .inquiry-form select,
+  .inquiry-form textarea,
+  .email-capture input {
+    color: #272522;
   }
 
   .nav-toggle {
