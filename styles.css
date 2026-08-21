@@ -13,6 +13,99 @@
   --sans: "Montserrat", Arial, sans-serif;
 }
 
+/* Mobile readability: strong, opaque type on light backgrounds. */
+@media (max-width: 820px) {
+  body,
+  .section-soft,
+  .business-card,
+  .website-card,
+  .service-card,
+  .resource-card,
+  .template-card,
+  details {
+    color: #050505;
+  }
+
+  .section-heading p:not(.eyebrow),
+  .split-heading p:not(.eyebrow),
+  .website-copy,
+  .website-copy p,
+  .website-card p,
+  .business-card p,
+  .service-card p,
+  .service-card li,
+  .resource-card p,
+  .shop-intro p:not(.eyebrow),
+  .about-copy p:not(.eyebrow),
+  .stats span,
+  .template-intro,
+  .template-card p,
+  .studio-panel p:not(.eyebrow),
+  details p {
+    color: #050505 !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+  }
+
+  .business-card h3,
+  .website-card h3,
+  .service-card h3,
+  .resource-card h3,
+  .template-card h3,
+  .section-soft h2,
+  .section-soft h3 {
+    color: #050505 !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+  }
+
+  .business-card a,
+  .website-card a,
+  .service-card a,
+  .resource-card a,
+  .section-soft .text-link {
+    color: #050505 !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+  }
+
+  .business-card span,
+  .website-card span,
+  .service-icon,
+  .resource-card > span,
+  .section-soft .eyebrow,
+  .template-showcase .eyebrow {
+    color: #9a681f !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+  }
+
+  .section-dark p,
+  .section-dark li,
+  .section-dark .package-card li,
+  .section-dark .timeline-item p,
+  .section-dark .why-grid p,
+  .section-dark .contact-details {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+  }
+
+  .section-dark h2,
+  .section-dark h3,
+  .section-dark .package-card strong {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+  }
+
+  .section-dark .eyebrow,
+  .section-dark .package-card span {
+    color: #e0b86f !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+  }
+}
+
 /* Fully opaque mobile colours and an iOS-friendly solid scrolled header. */
 @media (max-width: 820px) {
   .site-header.is-scrolled,
@@ -2127,5 +2220,80 @@ details p {
   .footer div {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+/* Final mobile contrast override. Keep this last so legacy colour rules cannot win. */
+@media (max-width: 820px) {
+  .section-heading p:not(.eyebrow),
+  .split-heading p:not(.eyebrow),
+  .website-copy,
+  .website-copy p,
+  .website-card p,
+  .business-card p,
+  .service-card p,
+  .service-card li,
+  .resource-card p,
+  .shop-intro p:not(.eyebrow),
+  .about-copy p:not(.eyebrow),
+  .stats span,
+  .template-intro,
+  .template-card p,
+  .studio-panel p:not(.eyebrow),
+  details p {
+    color: #050505 !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+  }
+
+  .business-card h3,
+  .website-card h3,
+  .service-card h3,
+  .resource-card h3,
+  .template-card h3,
+  .section-soft h2,
+  .section-soft h3,
+  .business-card a,
+  .website-card a,
+  .service-card a,
+  .resource-card a {
+    color: #050505 !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+  }
+
+  .business-card span,
+  .website-card span,
+  .service-icon,
+  .resource-card > span,
+  .section-soft .eyebrow,
+  .template-showcase .eyebrow {
+    color: #9a681f !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+  }
+
+  .section-dark p,
+  .section-dark li,
+  .section-dark .package-card li,
+  .section-dark .timeline-item p,
+  .section-dark .why-grid p,
+  .section-dark .contact-details {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+  }
+
+  .section-dark h2,
+  .section-dark h3 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+  }
+
+  .section-dark .eyebrow,
+  .section-dark .package-card span {
+    color: #e0b86f !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
   }
 }
